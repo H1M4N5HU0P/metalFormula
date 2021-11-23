@@ -71,9 +71,9 @@ while True:
             if "y" in yN:
                 iRate = float(input("Item rate:- "))
                 iQuantity = float(input("Item quantity:- "))
-                WithOuttax = iRate*iQuantity
-                GSTrate = (WithOuttax*tax)/100
-                nInvoiceValue = round(WithOuttax + GSTrate)
+                WOT = iRate*iQuantity
+                GSTrate = (WOT*tax)/100
+                nInvoiceValue = round(WOT + GSTrate)
                 time.sleep(1)
 
                 print()
