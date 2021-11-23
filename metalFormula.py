@@ -84,7 +84,8 @@ while True:
 
 
             elif "n" in yN:
-                pass
+                time.sleep(1)
+                break
 
     elif "3" in query:
         thickness = float(input("Thickness :- "))
