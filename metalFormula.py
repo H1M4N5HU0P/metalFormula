@@ -31,8 +31,8 @@ while True:
         print("############")
         print('')
 
-        iRate = int(input("Item rate:- "))
-        iQuantity = int(input("Item quantity:- "))
+        iRate = input("Item rate:- ")
+        iQuantity = input("Item quantity:- ")
         tax = int(input("GST Tax %:- "))
         WithOuttax = iRate*iQuantity
         print("")
