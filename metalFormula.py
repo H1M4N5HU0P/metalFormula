@@ -69,18 +69,20 @@ while True:
         while True:
             yN = input("Do you want to change value(y/n): ")
             if "y" in yN:
-                iR = float(input("Item rate:- "))
-                iQ = float(input("Item quantity:- "))
-                WOT = iR*iQ
-                GSTrate = (WOT*tax)/100
-                nInvoiceValue = round(WOT + GSTrate)
+                iRate = float(input("Item rate:- "))
+                iQuantity = float(input("Item quantity:- "))
+                WithOuttax = iRate*iQuantity
+                GSTrate = (WithOuttax*tax)/100
+                nInvoiceValue = round(WithOuttax + GSTrate)
+                taxValue = round((GSTrate/tax)*BillPercentage)
+                nTotal = GVWL+taxValue
                 time.sleep(1)
 
-                print()
+                print("")
                 print("Net Invoice Value",nInvoiceValue)
-                print()
+                print("")
                 print("Net Bill Amount(W. Bill Total)",nTotal)
-                print()
+                print("")
 
 
             elif "n" in yN:
