@@ -69,9 +69,9 @@ while True:
         while True:
             yN = input("Do you want to change value(y/n): ")
             if "y" in yN:
-                iRate = float(input("Item rate:- "))
-                iQuantity = float(input("Item quantity:- "))
-                WOT = iRate*iQuantity
+                iR = float(input("Item rate:- "))
+                iQ = float(input("Item quantity:- "))
+                WOT = iR*iQ
                 GSTrate = (WOT*tax)/100
                 nInvoiceValue = round(WOT + GSTrate)
                 time.sleep(1)
