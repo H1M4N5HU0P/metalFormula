@@ -33,7 +33,7 @@ while True:
 
         iRate = float(input("Item rate:- "))
         iQuantity = float(input("Item quantity:- "))
-        tax = float(input("GST Tax %:- "))
+        tax = int(input("GST Tax %:- "))
         WithOuttax = iRate*iQuantity
         print("")
         print("")
