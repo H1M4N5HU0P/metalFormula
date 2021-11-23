@@ -1,2 +1,0 @@
-# metalFormula
-METAL FORMULA
